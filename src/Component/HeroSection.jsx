@@ -1,12 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { TfiClose } from "react-icons/tfi";
 import { Link } from 'react-scroll';
 
 const HeroSection = () => {
-  const[mobile,setMobile]=useState(true)
-  const Menu=()=>{
-     setMobile(mobile)
+  const[mobile,setMobile]=useState(false)
+
+  const ToggleMobileNav=()=>{
+     setMobile(!mobile)
   }
   return (
     <>
@@ -27,7 +29,9 @@ const HeroSection = () => {
          <Link to='about' smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400'>About</li></Link> 
           
          <li className='  hover:text-blue-500  text-gray-400'>Portfolio</li>
-          <li className='  hover:text-blue-500  text-gray-400'>Service</li>
+         <Link to='service' smooth={true} duration={500}>
+           <li className='  hover:text-blue-500  text-gray-400'>Service</li></Link>
+          
            <li className='  hover:text-blue-500  text-gray-400'>Testimonials</li>
      </ul>
          </div>
@@ -37,17 +41,24 @@ const HeroSection = () => {
           </div>
     
     </nav>
-    <nav className='flex justify-between lg:hidden'>
+    <nav className='flex justify-between lg:hidden '>
        <div className=' flex'>
           <img className='h-[40px] w-[100px] bg-gray-800' src="https://img.freepik.com/premium-vector/ar-logo-design-abstract-initial-icon_733947-5145.jpg" alt='Logo' />
              <h1 className='text-[30px] font-bold text-white'>
                 ARISILE
             </h1> 
         </div>
-      {mobile&& <div className='p-3 border-2 border-blue-800 rounded-md text-xl text-blue-800 lg:hidden flex'>
-       <GiHamburgerMenu onClick={Menu} />
-         </div>}
+     <div onClick={ToggleMobileNav} className=' border-2 border-blue-800 rounded-md text-xl text-blue-800 lg:hidden flex z-[600] px-4 py-4'>
+      {mobile?(<TfiClose/>):(<GiHamburgerMenu   />) 
+      
+}
+     </div>
+      
+      
+        
     </nav>
+    
+        
     <section className='relative z-10 text-white flex flex-col items-center justify-center h-full'>
         <div className='text-center w-[60%]'>
             <h1 className='font-bold text-6xl leading-snug  text-gray-400'>
@@ -79,18 +90,32 @@ const HeroSection = () => {
     </section>
     </section>
       
-    {mobile&&<ul className='flex text-lg font-semibold gap-9 transition-all duration-200 cursor-pointer '>
+ {mobile &&<sidebar className="absolute h-fit w-full top-12 z-[500] bg-[#1b1448] lg:hidden ">
+      <div>
+           <nav>
+<ul className='flex text-lg font-semibold gap-4 transition-all duration-200 cursor-pointer flex-col '>
         
-         <Link to='about' smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400'>About</li></Link> 
+         <Link to='about' smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400  border-b-2 px-6 py-2'>About</li></Link> 
           
-         <li className='  hover:text-blue-500  text-gray-400'>Portfolio</li>
-          <li className='  hover:text-blue-500  text-gray-400'>Service</li>
-           <li className='  hover:text-blue-500  text-gray-400'>Testimonials</li>
-     </ul>}
+         <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Portfolio</li>
+         <Link to='service' smooth={true} duration={500}>
+          <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Service</li>
+         </Link>
+         
+           <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Testimonials</li>
+     </ul>
+     </nav>
+      </div>
+  </sidebar>
+  }
     
     
    
     </section>
+    
+    
+     
+         
     
     </>
   )
