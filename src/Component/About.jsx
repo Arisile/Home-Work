@@ -7,6 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const About = () => {
   return (
+    <>
     <section
      className='h-screen flex px-6  bg-[#0b043a] text-white  py-20 pl-14' 
      id='about'>
@@ -23,15 +24,18 @@ const About = () => {
         
      </div>
     <div className='flex w-[60%] flex-col gap-4 justify-center items-center'>
-    <p className='text-4xl font-semibold'>
+    <p className='text-3xl font-semibold'>
         I’m John Smith. I’m passionate about crafting exceptional websites. With a blend of design skills and coding expertise, I create unique online experiences that captivate users.
     </p>
     <p className='text-xl '>
         Looking for a top-notch web developer to revamp your hotel’s website? Look no further than John Smith. With years of experience and a keen eye for design, John can take your site to the next level, helping you attract more visitors and boost your bookings.
     </p>
     </div>
-    </section>
     
+    </section>
+    <hr />
+  
+    </>
   )
 }
 
