@@ -27,8 +27,8 @@ const HeroSection = () => {
       <ul className='flex text-lg font-semibold gap-9 transition-all duration-200 cursor-pointer '>
         
          <Link to='about' smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400'>About</li></Link> 
-          
-         <li className='  hover:text-blue-500  text-gray-400'>Portfolio</li>
+          <Link to="portfolio" smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400'>Portfolio</li></Link>
+         
          <Link to='service' smooth={true} duration={500}>
            <li className='  hover:text-blue-500  text-gray-400'>Service</li></Link>
           

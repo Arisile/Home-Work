@@ -4,10 +4,10 @@ import ServiceList from './ServiceList'
 const Service = () => {
   return (
     <section
-    className='h-full flex px-6  bg-[#0b043a] text-white  py-20 pl-14' 
+    className='h-full flex px-8  bg-[#0b043a] text-white  py-20 pl-20 pr-20' 
      id='service'>
         <div>
-           <h1 className='text-3xl font-bold py-7 md-4'>Services</h1>
+           <h1 className='text-4xl font-bold  mb-8 '>Services</h1>
            <div className='space-y-10'>
             <div>
                <ServiceList Num="01" Skills="Front End" About="Our web developer is proficient in designing beautiful and intuitive interfaces that enhance user experience, making our hotel’s website a pleasure to navigate." list1="Donec aenean duis vel id mattis nunc" list2="Suscipit integer amet adipiscing adipiscing" list3="Velit habitasse cursus velit" image="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/service-01.jpg"/>
