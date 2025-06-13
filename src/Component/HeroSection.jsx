@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from 'react-scroll';
+import Stat from './Stat';
 
 const HeroSection = () => {
   const[mobile,setMobile]=useState(false)
@@ -96,8 +97,9 @@ const HeroSection = () => {
 <ul className='flex text-lg font-semibold gap-4 transition-all duration-200 cursor-pointer flex-col '>
         
          <Link to='about' smooth={true} duration={500}><li className='  hover:text-blue-500  text-gray-400  border-b-2 px-6 py-2'>About</li></Link> 
-          
-         <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Portfolio</li>
+          <Link to='portfolio' smooth={true} duration={500}>
+          <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Portfolio</li>
+          </Link>
          <Link to='service' smooth={true} duration={500}>
           <li className='  hover:text-blue-500  text-gray-400 border-b-2 px-6 py-2'>Service</li>
          </Link>
