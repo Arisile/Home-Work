@@ -1,30 +1,31 @@
 import React from 'react'
+import CountUp from 'react-countup'
 
 const Stat = () => {
   return (
-    <section className='text-white bg-[#0b043a] py-60 pr-5'>
-        <div className='flex justify-center gap-4 px-10'>
-            <div className='flex items-center gap-2 border-r-[1px] border-white px-6'>
+    <section className=' py-60 '>
+        <div className='lg:flex justify-center gap-2 px-10 sm:grid grid-cols-2 sm:border-[1.5px] lg:border-hidden sm:m-6 sm:border-m-2'>
+            <div className='flex items-center gap-2 lg:border-r-[1px] border-gray-400 px-16'>
                 <h1 className='text-6xl'>
-                    10
+                    <CountUp delay={2} end={10} duration={2.75}/>
                     </h1>
-                    < p className='text-xl'>Years of experience</p>
+                    < p className='text-xl'>Years of <br /> experience</p>
             </div>
-             <div className='flex items-center gap-2 border-gray-300 px-10 pr-4'>
+             <div  className="flex items-center gap-2 lg:border-r-[1px] border-gray-400 px-16 ">
                 <h1 className='text-6xl'>
-                    120
+                    <CountUp delay={2} end={120} duration={2.75}/>
                     </h1>
-                    <p className='text-xl'>Successful projects</p>
+                    <p className='text-xl'>Successful <br /> projects</p>
             </div>
-             <div  className='flex items-center gap-2  border-gray-300 px-10 pr-4'>
+             <div   className="flex items-center gap-2 lg:border-r-[1px] border-gray-400 px-16">
                 <h1  className='text-6xl'>
-                    48
+                    <CountUp delay={2} end={48} duration={2.75}/>
                     </h1>
                     <p className='text-xl'>Happy clients</p>
             </div>
-             <div className='flex items-center gap-2  border-gray-300 px-10 pr-4'>
+             <div  className="flex items-center gap-2  px-16">
                 <h1  className='text-6xl'>
-                    7
+                     <CountUp delay={2} end={7} duration={2.75}/>
                     </h1>
                     <p className='text-xl'>individual award</p>
             </div> 

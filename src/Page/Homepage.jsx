@@ -6,7 +6,8 @@ import ServiceList from '../Component/ServiceList'
 import Portfolio from '../Component/Portfolio'
 import Stat from '../Component/Stat'
 import Footer from '../Component/Footer'
-
+import { FloatButton } from "antd";
+import Testimonial from '../Component/Testimonial'
 const Homepage = () => {
   return (
   <div>
@@ -14,8 +15,10 @@ const Homepage = () => {
     <About/>
     <Service/>
     <Portfolio/>
-    {/* <Stat/> */}
+    <Stat/>
+    {/* <Testimonial/>  */}
     <Footer/>
+    <FloatButton.BackTop/>
   </div>
   )
 }
