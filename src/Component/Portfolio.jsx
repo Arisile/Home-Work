@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
+import PortfoliosProps from './PortfoliosProps';
 const Portfolio = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Portfolio = () => {
             <button className='py-8 font-bold flex'>Project Detail<GoArrowUpRight className='mt-1 text-lg' /></button>
           </div>
        </div>
-       <div className='p-6  grid grid-cols-2 gap-4'>
+       {/* <div className='p-6  grid grid-cols-2 gap-4'>
          <div className='border-2'>
           
            <img className='lg:w-fit sm:none' src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/work-05.jpg" alt="" />
@@ -49,6 +50,11 @@ const Portfolio = () => {
          </div>
          </div>
         
+       </div> */}
+       <div className='grid grid-cols-2 pt-6 gap-6'>
+        <PortfoliosProps  image="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/work-05.jpg" desp1="Backend" desp2="NY Hospital CRM"/>
+         <PortfoliosProps image="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/work-04.jpg" desp1="Full-stack" desp2="  Ozone Esport Platform"/>
+         <PortfoliosProps image="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/work-03.jpg" desp1="Front End" desp2="NeuroApp Landing Page"/>
        </div>
       </section>
       

@@ -7,7 +7,8 @@ import Portfolio from '../Component/Portfolio'
 import Stat from '../Component/Stat'
 import Footer from '../Component/Footer'
 import { FloatButton } from "antd";
-import Testimonial from '../Component/Testimonial'
+import TestmonialProps from '../Component/TestmonialProps'
+import Testmonials from '../Component/Testmonials'
 const Homepage = () => {
   return (
   <div>
@@ -16,7 +17,8 @@ const Homepage = () => {
     <Service/>
     <Portfolio/>
     <Stat/>
-    {/* <Testimonial/>  */}
+    <Testmonials/>
+    {/* <TestmonialProps/> */}
     <Footer/>
     <FloatButton.BackTop/>
   </div>

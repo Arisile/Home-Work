@@ -3,8 +3,8 @@ import CountUp from 'react-countup'
 
 const Stat = () => {
   return (
-    <section className=' py-60 '>
-        <div className='lg:flex justify-center gap-2 px-10 sm:grid grid-cols-2 sm:border-[1.5px] lg:border-hidden sm:m-6 sm:border-m-2'>
+    <section className=' py-60  '>
+        <div className='lg:flex justify-center gap-2 px-10 sm:grid grid-cols-2'>
             <div className='flex items-center gap-2 lg:border-r-[1px] border-gray-400 px-16'>
                 <h1 className='text-6xl'>
                     <CountUp delay={2} end={10} duration={2.75}/>
