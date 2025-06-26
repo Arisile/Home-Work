@@ -4,7 +4,7 @@ import ServiceList from './ServiceList'
 const Service = () => {
   return (
     <section
-    className='h-full flex px-8  bg-[#0b043a] text-white  py-20 pl-20 pr-20' 
+    className='h-full flex px-8  bg-[#0b043a] text-white   ' 
      id='service'>
         <div>
            <h1 className='text-4xl font-bold  mb-8 '>Services</h1>

@@ -4,7 +4,7 @@ import { TiMediaPlay } from "react-icons/ti";
 const ServiceList = ({Num,Skills,About,list1,list2,list3,image}) => {
   return (
     
-       <section className='flex'>
+       <section className='flex py-20 pl-20 pr-20'>
         <div>
         <p className='text-purple-500'>{Num}</p>
         <h1 className='font-bold text-[30px]'>{Skills}</h1>

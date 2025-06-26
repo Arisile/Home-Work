@@ -42,7 +42,7 @@ const HeroSection = () => {
           </div>
     
     </nav>
-    <nav className='flex justify-between lg:hidden '>
+    <nav className='flex justify-between lg:hidden sm:p-6'>
        <div className=' flex'>
           <img className='h-[40px] w-[100px] bg-gray-800' src="https://img.freepik.com/premium-vector/ar-logo-design-abstract-initial-icon_733947-5145.jpg" alt='Logo' />
              <h1 className='text-[30px] font-bold text-white'>
@@ -62,7 +62,7 @@ const HeroSection = () => {
         
     <section className='relative z-10 text-white flex flex-col items-center justify-center h-full'>
         <div className='text-center w-[60%]'>
-            <h1 className='font-bold text-6xl leading-snug  text-gray-400'>
+            <h1 className='font-bold text-6xl leading-snug  text-gray-400 mb-6'>
        Freelance web developer based in Lagos  
     </h1>
     <p className='font-semibold text-lg  text-gray-400'>
@@ -81,7 +81,7 @@ const HeroSection = () => {
     Proudly collaborated with some of the biggest brands
     </p>
         
-    <section className='sm:flex sm:space-y-4 gap-9 justify-center mt-9 '>
+    <section className='sm:flex lg:flex sm:space-y-4 gap-9 justify-center mt-9 '>
       <img src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/client-logo-01.svg" alt="" />
       <img src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/client-logo-01.svg" alt="" />
       <img src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/07/client-logo-03.svg" alt="" />
